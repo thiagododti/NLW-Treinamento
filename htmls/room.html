@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Criar Sala - Rocket.Q</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="styles/modal.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="room" class="content">
+        <header>
+            <a href="home.html">
+                <img src="assets/logo.svg" alt="Rocket.Q Logo" />
+            </a>
+            <div class="buttons">
+                <div class="button outlined">
+
+                    <img src="assets/copy.svg" alt="Copiar numero da sala" />
+                    #30303030
+                </div>
+                <a href="#" class="button">
+                    
+                    <img src="assets/users-white.svg" alt="Criar uma sala" />
+                    Criar Sala
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section id="question-form">
+                <h2>Faça sua pergunta</h2>
+                <form action="">
+                    <label class="sr-only" for-id="question">O que você quer perguntar?</label>
+                    <textarea name="question" placeholder="O que você quer perguntar?"></textarea>
+                    <footer>
+                        <div>
+                            <img src="assets/lock.svg">
+                            Esta pergunta é anônima
+                        </div>
+                        <button>Enviar</button>
+                    </footer>
+                </form>
+            </section>
+
+            <section id="questions">
+                <h2 class="sr-only">Perguntas da comunidade</h2>
+                <div class="questions">
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg">
+                            </div>
+                            <div class="question">
+                                <p>Qual a diferença entre const, var e let no JavaScript?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="assets/check.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg">
+                            </div>
+                            <div class="question">
+                                <p>O que é Java Script</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="assets/check.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg">
+                            </div>
+                            <div class="question">
+                                <p>Qual a diferença de java pra javascript?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="delete">
+                                <img src="assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg">
+                            </div>
+                            <div class="question">
+                                <p>O Gerador de Texto Lorem Ipsum pode ser utilizado para você que está desenvolvendo seu projeto e precisa de texto aleatório para preencher os espaços e fazer testes. Assim, dá para testar o layout e a formatação antes de utilizar com conteúdo real.
+
+                                    Exemplo de texto gerado: "lorem ipsum dolor sit amet consectetur adipiscing elit sagittis velit torquent class ornare lobortis litora a duis lectus congue porttitor cubilia turpis inceptos lacinia ex suspendisse maximus tortor enim consequat feugiat pharetra penatibus curae tristique ligula eleifend at auctor tempus"
+                                    
+                                    Palavras-chave: gerador de lorem ipsum, gerar texto aleatório.</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="assets/check.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    </div>
+
+    <!-- modal -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir pergunta</h2>
+            <p>Tem certeza que voce deseja excluir esta pergunta?</p>
+            <form action="#">
+                <label class="sr-only" for-id="password">Digite sua senha admin</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha"/>
+
+                <div class="buttons">
+                    <div class="button grey">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
